@@ -30,3 +30,4 @@ SOURCE C:\DB\sql\insertmaster\ROLE_MST.sql
 SOURCE C:\DB\sql\insertmaster\SEQ_MAKER.sql
 SOURCE C:\DB\sql\insertmaster\TAX_RATE_MST.sql
 SOURCE C:\DB\sql\insertmaster\USER_MST.sql
+
