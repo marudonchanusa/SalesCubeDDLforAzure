@@ -3,13 +3,17 @@ CREATE DATABASE salescube DEFAULT CHARACTER SET utf8;
 USE salescube;
 
 SET NAMES utf8;
--- GRANT ALL PRIVILEGES ON salescube.* TO salescube@"%" IDENTIFIED BY 'salescube';
--- GRANT ALL PRIVILEGES ON salescube.* TO salescube@localhost IDENTIFIED BY 'salescube';
--- FLUSH PRIVILEGES;
+-- 以下3行はローカルDBの場合のみ
+GRANT ALL PRIVILEGES ON salescube.* TO salescube@"%" IDENTIFIED BY 'salescube';
+GRANT ALL PRIVILEGES ON salescube.* TO salescube@localhost IDENTIFIED BY 'salescube';
+FLUSH PRIVILEGES;
 
 -- テーブル作成
 SOURCE C:\DB\sql\createtable\GET_NEXT_VAL_HIST.sql
 SOURCE C:\DB\sql\createtable\CREATE.sql
+
+-- 顧客別単価マスタ作成
+SOURCE C:\DB\sql\create_customer_price.sql
 
 -- マスタデータ挿入
 SOURCE C:\DB\sql\insertmaster\BANK_MST.sql
