@@ -13,7 +13,7 @@ SOURCE C:\DB\sql\createtable\GET_NEXT_VAL_HIST.sql
 SOURCE C:\DB\sql\createtable\CREATE.sql
 
 -- 顧客別単価マスタ作成
-SOURCE C:\DB\sql\create_customer_price.sql
+SOURCE C:\DB\sql\createtable\create_customer_price.sql
 
 -- マスタデータ挿入
 SOURCE C:\DB\sql\insertmaster\BANK_MST.sql
